@@ -1,0 +1,429 @@
+/* Import a clean, modern font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* ---------- GLOBAL RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* A smooth gradient and full-height layout */
+  background: linear-gradient(to bottom right, #001e4d, #004080);
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- HEADER ---------- */
+.hedi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0066cc;
+  padding: 12px 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hedi img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  object-fit: cover;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+}
+
+/* ---------- WELCOME SECTION ---------- */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px 16px;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.welcome-logo {
+  width: 200px;
+  max-width: 80%;
+  height: auto;
+  margin-left: 12px;
+  vertical-align: middle;
+}
+
+/* ---------- INFO LIST ---------- */
+.info-section {
+  margin: 24px auto;
+  max-width: 600px;
+  width: 90%;
+}
+
+.info-list {
+  list-style: none;
+}
+
+.info-item {
+  margin-bottom: 1rem;
+}
+
+.info-text {
+  font-size: 1.25rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 16px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.info-text:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* ---------- QUOTE & DEVELOPER CREDIT ---------- */
+.quote-developer {
+  text-align: center;
+  margin: 32px 0;
+}
+
+.quote-text {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #f0f0f0;
+}
+
+.dev-credit {
+  font-size: 1rem;
+  color: #cfd8dc;
+}
+
+.developer-name {
+  display: inline-block;
+  font-weight: 700;
+  color: #ffdd57;
+  margin-top: 4px;
+}
+
+/* ---------- START BUTTON ---------- */
+.start-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.get-started {
+  background-color: #ffdd57;
+  color: #001e4d;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1.25rem;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.get-started:hover {
+  background-color: #ffd733;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* ---------- FADE-OUT ANIMATION ---------- */
+.fade-page {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+/* ---------- SUBJECT LIST (example) ---------- */
+.subject-list {
+  list-style: none;
+  margin: 0 auto 40px;
+  max-width: 600px;
+  width: 90%;
+  padding: 0;
+}
+
+.subject-item {
+  margin-bottom: 12px;
+}
+
+.subject-item a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #ffffff;
+  color: #001e4d;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.subject-item a:hover {
+  background-color: #e3f2fd;
+  transform: translateY(-2px);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.subject-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+/* ---------- RESPONSIVE ADJUSTMENTS ---------- */
+@media only screen and (max-width: 768px) {
+  .hedi {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .site-title {
+    font-size: 1.25rem;
+  }
+
+  .content {
+    padding: 24px 12px;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-logo {
+    width: 160px;
+  }
+
+  .info-text {
+    font-size: 1.1rem;
+    padding: 10px 14px;
+  }
+
+  .quote-text {
+    font-size: 1.1rem;
+  }
+
+  .dev-credit {
+    font-size: 0.9rem;
+  }
+
+  .get-started {
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    border-radius: 24px;
+  }
+
+  .subject-item a {
+    padding: 10px 14px;
+    gap: 10px;
+  }
+
+  .subject-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* —— 1. Keyframes —— */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* —— 2. Initial hidden state —— */
+.hedi,
+.content,
+
+.quote-developer,
+.start-container {
+  opacity: 0;
+}
+.info-item{
+    opacity: 0;
+    transform: translateY(20px);
+}
+/* —— 3. Apply animations with delays —— */
+/* Header slides down */
+.hedi {
+  animation: fadeInUp 0.6s ease-out 0.2s forwards;
+}
+
+/* Welcome section fades in + up */
+.content {
+  animation: fadeInUp 0.6s ease-out 0.4s forwards;
+}
+
+/* Info items staggered */
+.info-item:nth-child(1)  {
+  
+  animation: fadeInUp 0.5s ease-out 0.6s forwards;
+}
+.info-item:nth-child(2)  {
+  
+  animation: fadeInUp 0.5s ease-out 0.8s forwards;
+}
+.info-item:nth-child(3)  {
+  
+  animation: fadeInUp 0.5s ease-out 1s forwards;
+}
+
+/* Quote & Developer credit fades in */
+.quote-developer {
+  animation: fadeIn 0.6s ease-out 1.2s forwards;
+}
+
+/* Start button “pops” up */
+.start-container {
+  transform: scale(0.8);
+  animation: fadeInUp 0.6s ease-out 1.4s forwards;
+}
+
+/* (Optional) Subject list items, if present */
+.subject-list .subject-item:nth-child(1) a {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease-out 1.6s forwards;
+}
+.subject-list .subject-item:nth-child(2) a {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease-out 1.8s forwards;
+}
+.subject-list .subject-item:nth-child(3) a {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease-out 2s forwards;
+}
+/* Add more nth-child rules as needed */
+
+
+
+/* Toggle list-style */
+.doc-list {
+  list-style: none;
+  margin: 2rem auto;
+  padding: 0;
+  max-width: 600px;
+  width: 90%;
+}
+
+/* Each document row */
+.doc-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 1rem;
+  padding: 12px 16px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.doc-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Year label on left */
+.doc-year {
+  font-weight: 700;
+  color: #ffdd57; /* matching your start button accent */
+  margin-right: 1rem;
+  min-width: 3rem;
+  text-align: center;
+}
+
+/* Shared button styles */
+.btn {
+  padding: 8px 20px;
+  font-size: 0.7rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-view {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+ 
+}
+
+.btn-view:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-download {
+  background-color: #ffdd57;
+  color: #001e4d;
+  border: none;
+}
+
+.btn-download:hover {
+  background-color: #ffd733;
+}
+
+/* Back link */
+.back-link {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.back-link a {
+  color: #ffdd57;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}

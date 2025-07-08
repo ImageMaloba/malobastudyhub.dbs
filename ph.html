@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maloba Study Hub — {{SubjectName}}</title>
+
+  <!-- Global styles + subject-page CSS -->
+  <link rel="stylesheet" href="un.css" />
+  <link rel="stylesheet" href="unihome.css" />
+  <link rel="stylesheet" href="doc.css" />
+</head>
+
+<body class="fade-page">
+  <!-- HEADER (consistent across all pages) -->
+  <header class="hedi">
+    <img class="logo-left" src="ecz.jpg" alt="ECZ Logo" />
+    <h4 class="site-title">MALOBA STUDY HUB</h4>
+    <img class="logo-right" src="imageLogo.png" alt="Maloba Logo" />
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+    <section class="choice-section">
+      <h2 class="choice-heading">{{SubjectName}}</h2>
+
+      <!-- Document list -->
+      <ul class="doc-list">
+        <!-- Repeat this <li> for each document -->
+        <li class="doc-item">
+          <span class="doc-year">2020</span>
+          <a
+            class="btn btn-view"
+            href="docs/{{SubjectCode}}-2020.pdf"
+            target="_blank"
+            >View</a
+          >
+          <a
+            class="btn btn-download"
+            href="docs/{{SubjectCode}}-2020.pdf"
+            download
+            > Download </a
+          >
+        </li>
+
+        <!-- Example second item -->
+        <li class="doc-item">
+          <span class="doc-year">2019</span>
+          <a
+            class="btn btn-view"
+            href="docs/{{SubjectCode}}-2019.pdf"
+            target="_blank"
+            >View</a
+          >
+          <a
+            class="btn btn-download"
+            href="docs/{{SubjectCode}}-2019.pdf"
+            download
+            >  Download</a
+          >
+        </li>
+        <!-- …and so on… -->
+      </ul>
+
+      <!-- Back link -->
+      <p class="back-link">
+        <a href="mulungushi.html">← Back to Past Papers</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- Shared fade-out script -->
+  <script src="image.js"></script>
+</body>
+</html>
